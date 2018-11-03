@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-    client.user.setActivity('~', {type:'LISTENING'});
+    client.user.setGame(`. FủLiĨ "#1813`,'https://www.twitch.tv/MeeRcY')
 client.user.setStatus("idle")
     
 });
