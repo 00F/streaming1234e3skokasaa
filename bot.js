@@ -13,23 +13,26 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('MWt')) {
+if (message.content.startsWith('Mwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
+  client.user.setStatus("idle")
     message.channel.send(`${argresult} \` `)
 } else 
-if (message.content.startsWith('MLs')) {
+if (message.content.startsWith('Mls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
+  client.user.setStatus("idle")
     message.channel.send(` ${argresult} \` `)
 } else 
-if (message.content.startsWith('MSt')) {
+if (message.content.startsWith('Mst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/MeeRcY");
+  client.user.setStatus("idle")
    message.channel.send(`${argresult} \` `)
 }
 });
 
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
-  if (message.content === '712') {
+  if (message.content === '0..') {
   let channel = client.channels.get('444873938691031040');
 
   channel.join()
