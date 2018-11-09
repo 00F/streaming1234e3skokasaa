@@ -5,7 +5,7 @@ const developers = ['320423357709549568'];
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`. FủLiĨ "#1813`,'https://www.twitch.tv/MeeRcY')
+  client.user.setGame(`~`,'https://www.twitch.tv/MeeRcY')
   client.user.setStatus("idle")
 });
 
@@ -13,16 +13,16 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('3Wt')) {
+if (message.content.startsWith('MWt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.send(`${argresult} \` `)
 } else 
-if (message.content.startsWith('2Ls')) {
+if (message.content.startsWith('MLs')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
     message.channel.send(` ${argresult} \` `)
 } else 
-if (message.content.startsWith('1St')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+if (message.content.startsWith('MSt')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/MeeRcY");
    message.channel.send(`${argresult} \` `)
 }
 });
