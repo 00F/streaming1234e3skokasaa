@@ -26,8 +26,8 @@ client.user.setActivity(argresult , {type:'LISTENING'});
 if (message.content.startsWith('Mpl')) {
 client.user.setActivity(argresult , {type:'PLAYING'});
   client.user.setStatus("idle")
-    message.channel.send(`<:true:488465924370989056> `)
+    message.channel.send(`<:true:488465924370989056> `) // حقوق ميرسي.
   }
           
 });
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.MEERCY);
